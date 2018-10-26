@@ -1,0 +1,40 @@
+{
+    "name": "winc1500",
+    "config": {
+        "wifi-miso": {
+            "help": "SPI-MISO connection to external device",
+            "value": "NC"
+        },
+        "wifi-mosi": {
+            "help": "SPI-MOSI connection to external device",
+            "value": "NC"
+        },
+        "wifi-sclk": {
+            "help": "SPI-CLOCK connection to external device",
+            "value": "NC"
+        },
+        "wifi-nss": {
+            "help": "SPI chip select of external device",
+            "value": "NC"
+        },
+        "wifi-reset": {
+            "help": "winc1500 reset",
+            "value": "NC"
+        },
+        "wifi-dataready": {
+            "help": "winc1500 dataready",
+            "value": "NC"
+        },
+        "wifi-wakeup": {
+            "help": "winc1500 wakeup",
+            "value": "NC"
+        },
+        "enable_debug": {
+            "macro_name": "MBED_WINC1500_ENABLE_DEBUG",
+            "value": null,
+            "help": "Enables debug logging, true = enabled, false = disabled, null = disabled only in release builds"
+        }
+    },
+    "macros" : [ "__APP_APS3_CORTUS__", "CONF_WINC_DEBUG=1",
+        "NM_EDGE_INTERRUPT","CONF_WINC_USE_SPI" ]
+}
